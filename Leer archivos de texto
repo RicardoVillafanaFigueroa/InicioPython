@@ -1,0 +1,11 @@
+archivo = "C:/Users/Ricardo Villafaña/Documents/A - Ciencia de datos/Analisis clinicos 15 abril 2019.txt"
+FileName = (archivo)
+
+with open(FileName, 'r') as BigFile:
+    data = BigFile.read().replace('\n', '')
+    
+data = data.lower()
+
+import nltk    
+text = nltk.Text(nltk.word_tokenize(data)) 
+
